@@ -5,7 +5,7 @@ const getAllPictures = async () => {
   return result.json();
 };
 const getBigPicture = async (id) => {
-  const result = await fetch(API_URL + `:${id}`);
+  const result = await fetch(API_URL + ":imageId");
   return result.json();
 };
 const postComment = async (id, text) => {
