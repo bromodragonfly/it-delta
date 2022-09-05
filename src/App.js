@@ -1,10 +1,10 @@
-import { Header } from "./components/Header";
-import { Main } from "./components/Main";
+import { Header } from "./components/Header/Header";
+import { MainContent } from "./components/MainContent/MainContent";
 function App() {
   return (
     <div className="container">
       <Header />
-      <Main />
+      <MainContent />
     </div>
   );
 }

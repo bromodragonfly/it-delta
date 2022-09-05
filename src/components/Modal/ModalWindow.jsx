@@ -1,12 +1,13 @@
-import style from "./MadalWindow.module.css";
+import "./MadalWindow.css";
 import { ModalWindowContent } from "./ModalWindowContent/ModalWindowContent";
-export const ModalWindow = ({ active, setActive }) => {
+
+export const ModalWindow = ({ active, setActive, modalPicture }) => {
   return (
     <div
-      className={active ? [style.modal, style.active] : style.modal}
+      className={active ? "modal active" : "modal"}
       onClick={() => setActive(false)}
     >
-      <ModalWindowContent />
+      <ModalWindowContent setActive={setActive} modalPicture={modalPicture} />
     </div>
   );
 };

@@ -1,10 +1,10 @@
 .modal {
   background: rgba(107, 114, 128, 0.75);
-  width: 1333px;
-  height: 797px;
+  width: 100%;
+  height: 100%;
   position: fixed;
+  left: 0;
   top: 0;
-  margin: 1.3vh;
   overflow: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -13,10 +13,16 @@
   justify-content: center;
   align-items: center;
   z-index: 99;
-  /* padding: 30px 0; */
-  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+  transition: transform 0.5s ease 0s, opacity 0.15s ease 0s;
   transform: scale(0);
 }
+
 .active {
   transform: scale(1);
+}
+
+@media (max-width: 720px) {
+  .modal {
+    padding: 0 10px;
+  }
 }

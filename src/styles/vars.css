@@ -1,0 +1,9 @@
+:root {
+  --text-fs: 14px;
+  --text-lh: 20px;
+
+  @media (max-width: 720px) {
+    --text-fs: 12px;
+    --text-lh: 16px;
+  }
+}

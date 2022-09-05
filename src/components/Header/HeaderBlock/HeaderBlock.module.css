@@ -10,14 +10,14 @@
 }
 .buttonsBlock {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   min-width: calc(100% - 136px);
 }
 .buttonText {
   margin-left: 10px;
   color: #374151;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--text-fs);
   line-height: 20px;
 }
 .name {
@@ -27,6 +27,43 @@
   margin: 0 25px;
   flex: 1 1 auto;
 }
-.lastButton {
-  margin-left: 15px;
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1005px) {
+  .headerBlock {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 618px) {
+  .headerBlock {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonsBlock {
+    margin-top: 25px;
+  }
+
+  .avatar {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 470px) {
+  .buttonsBlock {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .buttonsWrapper {
+    margin-top: 10px;
+  }
 }
